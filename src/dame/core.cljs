@@ -1,5 +1,10 @@
 (ns dame.core
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require                                                 ;[doo.runner :refer-macros [doo-tests]]
+            [reagent.core :as reagent :refer [atom]]
+    ;[dame.core-test]
+            ))
+
+;(doo-tests 'dame.core-test)
 
 (enable-console-print!)
 
@@ -55,64 +60,45 @@
                           :clicked-state clicked-state
                           :toMove []}))
 
-(defn get-clicked-Atom [state]
-  "so much @ confuses me"
-  @(get state :clicked-state))
-
-(defn move-direction [i j]
-  "give the first layer of move directions, means diagonal according to the state
+(defn move-direction [state i j]
+  "Gives the first layer of move directions, means diagonal according to the state
   of your figure"
   (cond
     (=
-      (:dir (get-in @app-state [:board j i]))
+      (:dir (get-in state [:board j i]))
       :top)
     [[-1 -1] [1 -1]]
     (=
-      (:dir (get-in @app-state [:board j i]))
+      (:dir (get-in state [:board j i]))
       :bot)
     [[-1 1] [1 1]]
     :else
     [[-1 -1] [1 -1] [-1 1] [1 1]]))
 
-(defn vector-calc [i j dx dy]
+(defn vector-calc! [state i j dx dy]
   "if nothings is in the way just returns the first layer of moves,
   if sth is in the way checks if its your own figure or sb elses
-  and returns a vector according to that"
+  and returns a coordinate according to that"
   (let [x (+ i dx)
         y (+ j dy)]
-    (if ((complement zero?) (get-in @app-state [:board y x]))
+    (if ((complement zero?) (get-in state [:board y x]))
       (when ((complement =)
-              (:turn @app-state)
-              (:color (get-in @app-state [:board y x])))
+              (:turn state)
+              (:color (get-in state [:board y x])))
           (let [x2 (+ i (* 2 dx))
                 y2 (+ j (* 2 dy))]
-            (when (zero? (get-in @app-state [:board y2 x2]))
+            (when (zero? (get-in state [:board y2 x2]))
               (swap! app-state assoc :toMove (conj (:toMove @app-state) [[i j] [x y] [x2 y2]]))
               [x2 y2])))
       [x y])))
 
-(defn calcute-direction [i j]
+(defn calcute-direction [state i j]
   "2 parted the calculation to make it easier for figures who are able
   to go to all directions"
-  (for [dir (move-direction i j)]
-    (vector-calc i j (first dir) (second dir))))
+  (for [dir (move-direction state i j)]
+    (vector-calc! state i j (first dir) (second dir))))
 
-
-;TODO blank in empty or blank field?
-;possibly buggy if figure on and click on a edge in the same field
 (defn blank [i j]
-  [:rect {:width  0.9
-          :height 0.9
-          :fill   (if (is-black-field? i j)
-                    "black"
-                    "ivory")
-          :x      i
-          :y      j
-          :on-click
-                  (fn blank-click [e]
-                    (prn "blank click"))}])
-
-(defn blank-empty [i j]
   [:rect {:width  0.9
           :height 0.9
           :fill   (if (is-black-field? i j)
@@ -121,7 +107,7 @@
           :x      i
           :y      j}])
 
-(defn to-move-field-click [i j]
+(defn to-move-field-click! [i j]
   (when (get @app-state :clicked-state)
     (let [accI (:i @(get @app-state :clicked-state))
           accJ (:j @(get @app-state :clicked-state))
@@ -139,22 +125,20 @@
         (if ((complement empty?) beatenFigure)
           (swap! app-state assoc-in
                  [:board (second beatenFigure) (first beatenFigure)] 0)
-          (swap! app-state assoc :turn (if (= (:turn @app-state) :black) :white :black)))))))
-  ;)  )
+          (swap! app-state assoc :turn (if (= (:turn @app-state) :black) :white :black)))))
+    (swap! app-state assoc :toMove)))
 
 
 (defn to-move-field [i j]
-  ;  (blank i j)
   [:rect {:width  0.9
           :height 0.9
+          :x      i
           :fill   "red"
           :opacity 0.2
-          ;                  (if (is-black-field? i j) "black" "ivory")
-          :x      i
           :y      j
           :on-click
                   (fn blank-click [e]
-                    (to-move-field-click i j))}])
+                    (to-move-field-click! i j))}])
 
 (defn click-on-figure [i j]
   "Takes either a white or a black figure and marks it as clicked"
@@ -164,7 +148,7 @@
     (swap! app-state assoc :clicked-state (atom {:clicked true
                                                  :i i
                                                  :j j
-                                                 :move (calcute-direction i j)}))
+                                                 :move (calcute-direction @app-state i j)}))
     ;(prn (get @app-state :clicked-state))
     ))
 ;  (and
@@ -216,9 +200,6 @@
 
 (defn clicked-figure [i j]
   [:svg
-   {:on-click
-    (fn some-fn [e]
-      (prn "clicked-figure click event"))}
    (blank i j)
    [:circle
     {:r    0.45
@@ -236,7 +217,21 @@
      :cx   (+ 0.45 i)
      :cy   (+ 0.45 j)}]])
 
-(defn hello-world []
+(defn parse-for-matches [state i j]
+  (filter (fn [e] (and
+                    (= (first e) i)
+                    (= (second e) j)))
+          (when (get state :clicked-state)
+            (:move @(:clicked-state state)))))
+
+(defn matched? [state i j]
+  (and
+    (:clicked @(:clicked-state state))
+    (= i (:i @(:clicked-state state)))
+    (= j (:j @(:clicked-state state)))))
+
+
+(defn draughts []
   [:center
    [:h1 (:text @app-state)]
    [:h2 (:turn @app-state)]
@@ -260,18 +255,10 @@
      (for [i (range board-size)
            j (range board-size)]
        (cond
-         ;([0 3] [2 3])
-         ((complement empty?) (filter (fn [e] (and
-                                               (= (first e) i)
-                                               (= (second e) j)))
-                                     (when (get @app-state :clicked-state)
-                                       (get @(get @app-state :clicked-state) :move))))
+         ((complement empty?) (parse-for-matches @app-state i j))
          (to-move-field i j)
-         (when (get @app-state :clicked-state)
-           (and
-             (:clicked @(:clicked-state @app-state))
-             (= i (:i @(:clicked-state @app-state)))
-             (= j (:j @(:clicked-state @app-state)))))
+         (when (:clicked-state @app-state)
+           (matched? @app-state i j))
          (clicked-figure i j)
          :else
          (case (:color (get-in @app-state [:board j i]))
@@ -279,11 +266,13 @@
            :black [black-figure i j]
            :white [white-figure i j]))))])
 
-(reagent/render-component [hello-world]
+(reagent/render-component [draughts]
                           (. js/document (getElementById "app")))
 
 
 (defn on-js-reload []
+  (prn (:toMove @app-state))
+  (prn "eyyw")
   ;; optionally touch your app-state to force rerendering depending on
   ;; your application
   ;; (swap! app-state update-in [:__figwheel_counter] inc)

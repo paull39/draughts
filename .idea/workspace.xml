@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="729b955a-0719-482d-801f-c5c08212b8f1" name="Default" comment="" />
+    <list default="true" id="729b955a-0719-482d-801f-c5c08212b8f1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dame/core_test.cljs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dame.iml" afterPath="$PROJECT_DIR$/dame.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dame/core.cljs" afterPath="$PROJECT_DIR$/src/dame/core.cljs" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/user.clj">
+      <file leaf-file-name="project.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-185">
+              <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -24,18 +30,18 @@
       <file leaf-file-name="core.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dame/core.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="105" column="21" lean-forward="false" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+            <state relative-caret-position="788">
+              <caret line="274" column="11" lean-forward="false" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project.clj">
+      <file leaf-file-name="core_test.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/dame/core_test.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+            <state relative-caret-position="234">
+              <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -43,11 +49,26 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ClojureScript Test Namespace" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>to-move-field</find>
       <find>prn</find>
+      <find>doo</find>
+      <find>to-move-field-click</find>
+      <find>hello-world</find>
+      <find>calcute-direction</find>
+      <find>to-move-field-click!</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -59,14 +80,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/dame/core.cljs" />
         <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/test/dame/core_test.cljs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="1152" />
     <option name="y" value="24" />
-    <option name="width" value="1918" />
-    <option name="height" value="1132" />
+    <option name="width" value="1234" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -83,9 +105,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -102,35 +121,47 @@
             <path>
               <item name="dame" type="b2602c69:ProjectViewProjectNode" />
               <item name="dame" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dame" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dame" type="b2602c69:ProjectViewProjectNode" />
               <item name="dame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dame" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dame" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="dame" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Keybindings" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="cursive.last.file.extension./home/nicolai/Projects/dame/test" value="cljs" />
   </component>
-  <component name="ReplState" timestamp="1507044370822">{:repl-history {:ide [], :local [{:command &quot;(let [n 8]\n  (for [i (range n)\n        j (range n)]\n    (cond\n      (&lt; j 3)\n        1\n      (&lt; j (- n 3))\n        2\n      :else\n        0\n      )))&quot;, :offset 147, :ns &quot;user&quot;} {:command &quot;(fill-board (new-board))&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-board (new-board 8))&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-board (new-board 8\n))&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(def board-size 8)&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             (assoc-in board [j i] 1)\n             (&lt; j (- board-size 3))\n             (assoc-in board [j i] 2)\n             :else\n             (assoc-in board [j i] 0)\n             )) board)&quot;, :offset 321, :ns &quot;user&quot;} {:command &quot;(defn new-board [n]\n      (vec (repeat n (vec (repeat n 0)))))&quot;, :offset 62, :ns &quot;user&quot;} {:command &quot;(merge fill-board (new-board board-size))&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(merge (fill-board (new-board board-size)) (new-board board-size)) &quot;, :offset 64, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             [i j] 1\n             (&lt; j (- board-size 3))\n             [i j] 2\n             :else\n             [i j] 0\n             )))&quot;, :offset 264, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             (assoc board [i j] 1)\n             (&lt; j (- board-size 3))\n             (assoc board [i j] 2)\n             :else\n             (assoc board [i j] 0)\n             )))&quot;, :offset 306, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             (assoc-in board [j i] 1)\n             (&lt; j (- board-size 3))\n             (assoc-in board [j i] 2)\n             :else\n             (assoc-in board [j i] 0)\n             )))&quot;, :offset 315, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             (assoc-in board [j i] 1)\n             (&gt; j (- board-size 3))\n             (assoc-in board [j i] 2)\n             :else\n             (assoc-in board [j i] 0)\n             )))&quot;, :offset 75, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n              (assoc-in board [j i] 1)\n             (&gt; j (- board-size 3))\n              (assoc-in board [j i] 2)\n             :else\n              (assoc-in board [j i] 0)\n             ))board )&quot;, :offset 323, :ns &quot;user&quot;} {:command &quot;(fill-board '())&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           [i j] 0))&quot;, :offset 112, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           [i j]))&quot;, :offset 110, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n              (assoc-in board [j i] 1) board\n             (&gt; j (- board-size 3))\n              (assoc-in board [j i] 2) board\n             :else\n              (assoc-in board [j i] 0) board\n             )))&quot;, :offset 336, :ns &quot;user&quot;} {:command &quot;(defn new-board [n]\n  (vec (repeat n (vec (repeat n 0)))))&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(assoc-in (new-board 8) [1 2] 1)&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (conj board \n                 (cond \n                   (&lt; j 3)\n              (assoc-in board [j i] 1) board\n             (&gt; j (- board-size 3))\n              (assoc-in board [j i] 2) board\n             :else\n              (assoc-in board [j i] 0) board\n             ))))&quot;, :offset 374, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (conj board \n                 (cond \n                   (&lt; j 3)\n              (assoc-in board [j i] 1)\n             (&gt; j (- board-size 3))\n              (assoc-in board [j i] 2)\n             :else\n              (assoc-in board [j i] 0)\n             ))))&quot;, :offset 356, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (conj board \n                 (cond \n                   (&lt; j 3)\n              '([i j] 1)\n             (&gt; j (- board-size 3))\n                   '([i j] 2)\n             :else\n                   '([i j] 0)\n             ))))&quot;, :offset 324, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (conj board \n                 (cond \n                   (&lt; j 3)\n              ([i j] 1)\n             (&gt; j (- board-size 3))\n                   ([i j] 2)\n             :else\n                   ([i j] 0)\n             ))))&quot;, :offset 294, :ns &quot;user&quot;} {:command &quot;(fill-board (new-board board-size))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range board-size)]\n    (assoc-in board [j i]\n          (cond\n            (&lt; j 3) \n            1\n            (&gt; j (- board-size 3))\n            2\n            :else\n            0\n            )))) &quot;, :offset 260, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range board-size)]\n    (assoc-in board [j i]\n          (cond\n            (&lt; j 3) \n            1\n            (&gt; j (- board-size 3))\n            2\n            :else\n            0\n            )) board)) &quot;, :offset 266, :ns &quot;user&quot;} {:command &quot;(defn is-black-field? [i j]\n  (if (even? j)\n    (if (even? i)\n      false\n      true)\n    (if (even? i)\n      true\n      false)))&quot;, :offset 129, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range 3)\n        :while (and (&lt; j 3) (is-black-field? i j))]&quot;, :offset 127, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range 3)\n        :while (and (&lt; j 3) (is-black-field? i j))]\n    [i j]))&quot;, :offset 139, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range 3)\n        :when (and (&lt; j 3) (is-black-field? i j))]\n    [i j]))&quot;, :offset 90, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range 3)\n        :when (is-black-field? i j)]\n    [i j]))&quot;, :offset 124, :ns &quot;user&quot;} {:command &quot;(defn black-start [board]\n  (let [black-start-fields (for [i (range board-size)\n                                 j (range 3)\n                                 :when (is-black-field? i j)]\n                             [i j])]\n    (reduce (fn [acc [i j]] (assoc-in acc [j i] 1)) board  black-start-fields)))&quot;, :offset 304, :ns &quot;user&quot;} {:command &quot;(black-start (new-board 8))&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(for [i (range 4)\n      j (range 4)\n      dir [[1 0] [0 1] [1 1] [1 -1]]]&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(for [i (range 4)\n      j (range 4)\n      dir [[1 0] [0 1] [1 1] [1 -1]]] \n  [i j dir])&quot;, :offset 87, :ns &quot;user&quot;} {:command &quot;(flatten [1 2])&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(flatten [:board [1 2]])&quot;, :offset 24, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="ReplState" timestamp="1507587116424">{:repl-history {:ide [], :local [{:command &quot;(let [n 8]\n  (for [i (range n)\n        j (range n)]\n    (cond\n      (&lt; j 3)\n        1\n      (&lt; j (- n 3))\n        2\n      :else\n        0\n      )))&quot;, :offset 147, :ns &quot;user&quot;} {:command &quot;(fill-board (new-board))&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-board (new-board 8))&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-board (new-board 8\n))&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(def board-size 8)&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             (assoc-in board [j i] 1)\n             (&lt; j (- board-size 3))\n             (assoc-in board [j i] 2)\n             :else\n             (assoc-in board [j i] 0)\n             )) board)&quot;, :offset 321, :ns &quot;user&quot;} {:command &quot;(defn new-board [n]\n      (vec (repeat n (vec (repeat n 0)))))&quot;, :offset 62, :ns &quot;user&quot;} {:command &quot;(merge fill-board (new-board board-size))&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(merge (fill-board (new-board board-size)) (new-board board-size)) &quot;, :offset 64, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             [i j] 1\n             (&lt; j (- board-size 3))\n             [i j] 2\n             :else\n             [i j] 0\n             )))&quot;, :offset 264, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             (assoc board [i j] 1)\n             (&lt; j (- board-size 3))\n             (assoc board [i j] 2)\n             :else\n             (assoc board [i j] 0)\n             )))&quot;, :offset 306, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             (assoc-in board [j i] 1)\n             (&lt; j (- board-size 3))\n             (assoc-in board [j i] 2)\n             :else\n             (assoc-in board [j i] 0)\n             )))&quot;, :offset 315, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n             (assoc-in board [j i] 1)\n             (&gt; j (- board-size 3))\n             (assoc-in board [j i] 2)\n             :else\n             (assoc-in board [j i] 0)\n             )))&quot;, :offset 75, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n              (assoc-in board [j i] 1)\n             (&gt; j (- board-size 3))\n              (assoc-in board [j i] 2)\n             :else\n              (assoc-in board [j i] 0)\n             ))board )&quot;, :offset 323, :ns &quot;user&quot;} {:command &quot;(fill-board '())&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           [i j] 0))&quot;, :offset 112, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           [i j]))&quot;, :offset 110, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (cond\n             (&lt; j 3)\n              (assoc-in board [j i] 1) board\n             (&gt; j (- board-size 3))\n              (assoc-in board [j i] 2) board\n             :else\n              (assoc-in board [j i] 0) board\n             )))&quot;, :offset 336, :ns &quot;user&quot;} {:command &quot;(defn new-board [n]\n  (vec (repeat n (vec (repeat n 0)))))&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(assoc-in (new-board 8) [1 2] 1)&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (conj board \n                 (cond \n                   (&lt; j 3)\n              (assoc-in board [j i] 1) board\n             (&gt; j (- board-size 3))\n              (assoc-in board [j i] 2) board\n             :else\n              (assoc-in board [j i] 0) board\n             ))))&quot;, :offset 374, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (conj board \n                 (cond \n                   (&lt; j 3)\n              (assoc-in board [j i] 1)\n             (&gt; j (- board-size 3))\n              (assoc-in board [j i] 2)\n             :else\n              (assoc-in board [j i] 0)\n             ))))&quot;, :offset 356, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (conj board \n                 (cond \n                   (&lt; j 3)\n              '([i j] 1)\n             (&gt; j (- board-size 3))\n                   '([i j] 2)\n             :else\n                   '([i j] 0)\n             ))))&quot;, :offset 324, :ns &quot;user&quot;} {:command &quot;(defn fill-board [board]\n      (for [i (range board-size)\n            j (range board-size)]\n           (conj board \n                 (cond \n                   (&lt; j 3)\n              ([i j] 1)\n             (&gt; j (- board-size 3))\n                   ([i j] 2)\n             :else\n                   ([i j] 0)\n             ))))&quot;, :offset 294, :ns &quot;user&quot;} {:command &quot;(fill-board (new-board board-size))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range board-size)]\n    (assoc-in board [j i]\n          (cond\n            (&lt; j 3) \n            1\n            (&gt; j (- board-size 3))\n            2\n            :else\n            0\n            )))) &quot;, :offset 260, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range board-size)]\n    (assoc-in board [j i]\n          (cond\n            (&lt; j 3) \n            1\n            (&gt; j (- board-size 3))\n            2\n            :else\n            0\n            )) board)) &quot;, :offset 266, :ns &quot;user&quot;} {:command &quot;(defn is-black-field? [i j]\n  (if (even? j)\n    (if (even? i)\n      false\n      true)\n    (if (even? i)\n      true\n      false)))&quot;, :offset 129, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range 3)\n        :while (and (&lt; j 3) (is-black-field? i j))]&quot;, :offset 127, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range 3)\n        :while (and (&lt; j 3) (is-black-field? i j))]\n    [i j]))&quot;, :offset 139, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range 3)\n        :when (and (&lt; j 3) (is-black-field? i j))]\n    [i j]))&quot;, :offset 90, :ns &quot;user&quot;} {:command &quot;(let [board (new-board 8)]\n  (for [i (range board-size)\n        j (range 3)\n        :when (is-black-field? i j)]\n    [i j]))&quot;, :offset 124, :ns &quot;user&quot;} {:command &quot;(defn black-start [board]\n  (let [black-start-fields (for [i (range board-size)\n                                 j (range 3)\n                                 :when (is-black-field? i j)]\n                             [i j])]\n    (reduce (fn [acc [i j]] (assoc-in acc [j i] 1)) board  black-start-fields)))&quot;, :offset 304, :ns &quot;user&quot;} {:command &quot;(black-start (new-board 8))&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(for [i (range 4)\n      j (range 4)\n      dir [[1 0] [0 1] [1 1] [1 -1]]]&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(for [i (range 4)\n      j (range 4)\n      dir [[1 0] [0 1] [1 1] [1 -1]]] \n  [i j dir])&quot;, :offset 87, :ns &quot;user&quot;} {:command &quot;(flatten [1 2])&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(flatten [:board [1 2]])&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(click-on-figure 1 1)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(click-on-figure 0 0)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(atom {:a a,\n       :b (atom {:c c,\n                 :d d})})&quot;, :offset 61, :ns &quot;user&quot;} {:command &quot;(atom {:a \&quot;a\&quot;,\n       :b (atom {:c \&quot;c\&quot;,\n                 :d \&quot;d\&quot;})})&quot;, :offset 67, :ns &quot;user&quot;} {:command &quot;(def my-atom (atom {:a \&quot;a\&quot;,\n                    :b (atom {:c \&quot;c\&quot;,\n                              :d \&quot;d\&quot;})}))&quot;, :offset 107, :ns &quot;user&quot;} {:command &quot;(get-in my-atom [:b :d])&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(get-in my-atom [:b @:d])&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(get-in my-atom [:d :b])&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(get-in my-atom [:b])&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(get my-atom :b)&quot;, :offset 16, :ns &quot;user&quot;} {:command &quot;(get @my-atom :b)&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(get-in @my-atom [:b])&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(get-in @my-atom [:b :d])&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(get-in @my-atom [:d :b])&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(:d @(get-in @my-atom [:b]))&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(swap! (get @my-atom :b) assoc :d \&quot;e\&quot;)&quot;, :offset 38, :ns &quot;user&quot;} {:command &quot;(filter (fn [e] (and\n                  (= (first e) 0)\n                  (= (second e) 3)))\n        '([0 3] [2 3]))&quot;, :offset 115, :ns &quot;user&quot;} {:command &quot;(some? (filter (fn [e] (and\n                         (= (first e) 0)\n                         (= (second e) 3)))\n               '([0 3] [2 3])))&quot;, :offset 144, :ns &quot;user&quot;} {:command &quot;(some? '())&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(true? (filter (fn [e] (and\n                         (= (first e) 0)\n                         (= (second e) 3)))\n               '([0 3] [2 3])))&quot;, :offset 5, :ns &quot;user&quot;} {:command &quot;(count (filter (fn [e] (and\n                         (= (first e) 0)\n                         (= (second e) 3)))\n               '([0 3] [2 3])))&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(filter (fn [e] (and\n                         (= (first e) 0)\n                         (= (second e) 3)))\n               '([0 3] [2 3]))&quot;, :offset 136, :ns &quot;user&quot;} {:command &quot;(zero? (filter (fn [e] (and\n                         (= (first e) 0)\n                         (= (second e) 3)))\n               '([0 3] [2 3])))&quot;, :offset 144, :ns &quot;user&quot;} {:command &quot;(empty? (filter (fn [e] (and\n                         (= (first e) 0)\n                         (= (second e) 3)))\n               '([0 3] [2 3])))&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;((complement empty?) (filter (fn [e] (and\n                         (= (first e) 0)\n                         (= (second e) 3)))\n               '([0 3] [2 3])))&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(defn score\n  [game]\n  (loop [acc 0\n         e game]\n    (if (empty? e)\n      acc\n      (recur (+ acc\n                (if (= 10 (+ (first e) (first (rest e))))\n                  (+\n                    (-&gt; e\n                        rest\n                        rest\n                        first)\n                    (-&gt; e\n                        rest\n                        rest\n                        rest\n                        first)\n                    10)\n                  (first e)))\n             (rest e)))))&quot;, :offset 519, :ns &quot;dame.core&quot;} {:command &quot;(def test2 [1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1])&quot;, :offset 53, :ns &quot;dame.core&quot;} {:command &quot;(def test3 [5 5 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])&quot;, :offset 53, :ns &quot;dame.core&quot;} {:command &quot;(def test4 [10 3 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])&quot;, :offset 52, :ns &quot;dame.core&quot;} {:command &quot;(defn score\n  [game]\n  (loop [acc 0\n         e game]\n    (if (empty? e)\n      acc\n      (recur (+ acc\n                (if (= 10 (+ (first e) (when ((complement empty?) (rest e)) \n                                         (first (rest e)))))\n                  (+\n                    (-&gt; e\n                        rest\n                        rest\n                        first)\n                    (-&gt; e\n                        rest\n                        rest\n                        rest\n                        first)\n                    10)\n                  (first e)))\n             (rest e)))))&quot;, :offset 401, :ns &quot;dame.core&quot;} {:command &quot;(defn score\n  [game]\n  (loop [acc 0\n         e game]\n    (if (empty? e)\n      acc\n      (recur (+ acc\n                (if (&gt;= 3 (count e))\n                  (if (= 10 (+ (first e) (first (rest e))))\n                  (+\n                    (-&gt; e\n                        rest\n                        rest\n                        first)\n                    (-&gt; e\n                        rest\n                        rest\n                        rest\n                        first)\n                    10)\n                  (first e))))\n             (rest e)))))&quot;, :offset 559, :ns &quot;dame.core&quot;} {:command &quot;(defn score\n  [game]\n  (loop [acc 0\n         e game]\n    (if (empty? e)\n      acc\n      (recur (+ acc\n                (if (&gt;= 3 (count e))\n                  (if (= 10 (+ (first e) (first (rest e))))\n                    (+\n                      (-&gt; e\n                          rest\n                          rest\n                          first)\n                      (-&gt; e\n                          rest\n                          rest\n                          rest\n                          first)\n                      10)\n                    (first e))\n                  (first e)))\n             (rest e)))))()&quot;, :offset 586, :ns &quot;dame.core&quot;} {:command &quot;(score test2)&quot;, :offset 13, :ns &quot;dame.core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -279,36 +310,37 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1152" y="-4" width="1920" height="1204" extended-state="6" />
+    <frame x="1152" y="24" width="1234" height="1176" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3543223" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961932" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.91995734" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17449306" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12710437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -319,11 +351,81 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dame/core_test.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dame/core.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4932">
+          <caret line="274" column="12" lean-forward="false" selection-start-line="274" selection-start-column="12" selection-end-line="274" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dame/core.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dame/core_test.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dev/user.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dame/core.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="105" column="21" lean-forward="false" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/user.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -347,7 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -371,7 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -395,7 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -419,22 +518,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dame.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.lein-failures">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dame/core.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="105" column="21" lean-forward="false" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+        <state relative-caret-position="788">
+          <caret line="274" column="11" lean-forward="false" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dame/core_test.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        <state relative-caret-position="-185">
+          <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -442,9 +562,82 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.10.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>dame</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Leiningen: args4j:2.33</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
