@@ -6,11 +6,16 @@
 
 ;(doo-tests 'dame.core-test)
 
+
+;BUGS: Removing a figure that replacing with 0
+
 (enable-console-print!)
 
 (def board-size 8)
-(def black {:color :black, :dir :bot})
-(def white {:color :white, :dir :top})
+(defn black [i j]
+  {:color :black, :dir :bot, :i i, :j j})
+(defn white [i j]
+  {:color :white, :dir :top, :i i, :j j})
 (def clicked-state (atom {:clicked false,
                           :i       nil,
                           :j       nil,
@@ -37,7 +42,7 @@
                                  j (range 3)
                                  :when (is-black-field? i j)]
                              [i j])]
-    (reduce (fn [acc [i j]] (assoc-in acc [j i] black)) board black-start-fields)))
+    (reduce (fn [acc [i j]] (assoc-in acc [j i] (black i j))) board black-start-fields)))
 
 (defn white-start [board]
   "3 rows of queens at start for white"
@@ -45,7 +50,7 @@
                                  j (range (- board-size 3) board-size)
                                  :when (is-black-field? i j)]
                              [i j])]
-    (reduce (fn [acc [i j]] (assoc-in acc [j i] white)) board white-start-fields)))
+    (reduce (fn [acc [i j]] (assoc-in acc [j i] (white i j))) board white-start-fields)))
 
 (defn fill-board [board]
   "put em in"
@@ -139,6 +144,52 @@
           :on-click
                   (fn blank-click [e]
                     (to-move-field-click! i j))}])
+
+(defn explode-board []
+  "returns")
+
+(defn get-all-figures-from [state player]
+  (->> (flatten (:board state))
+       (filter (fn [e] (= player (:color e))))))
+
+(defn figure?
+  ([figure]
+    (zero? figure))
+  ([state i j]
+   (not (zero? (get-in state [j i])))))
+
+(defn hit? [state [i j] [di dj]]
+  (let [player (:color (get-in (:board state) [j i]))
+        check-field (get-in (:board state) [dj di])]
+    (if (figure? check-field)
+      (not (= player (:color check-field)))
+      false)))
+
+(defn free? [figure])
+
+(defn calcute-from-vectors-to-board [state [i j] dir]
+  (map
+    (fn [e]
+      (if (hit? state [i j] e)
+        [(+ i (* 2 (first e))) (+ j (* 2 (second e)))]
+        [(+ i (first e)) (+ j (second e))]))
+    dir))
+
+(defn check-for-possible-hits [state player]
+  (calcute-from-vectors-to-board state
+                                 [(:i (first (get-all-figures-from state player)))
+                                  (:j (first (get-all-figures-from state player)))]
+                                 (move-direction
+                                   state
+                                   (:i (first (get-all-figures-from state player)))
+                                   (:j (first (get-all-figures-from state player)))))
+
+
+  ;  (filter
+  ; (fn [e] (= player (:color e)))
+  ; (flatten (:board state))
+  )
+
 
 (defn click-on-figure [i j]
   "Takes either a white or a black figure and marks it as clicked"
@@ -269,10 +320,12 @@
 (reagent/render-component [draughts]
                           (. js/document (getElementById "app")))
 
-
 (defn on-js-reload []
   (prn (:toMove @app-state))
-  (prn "eyyw")
+  (prn "check for hits, black:")
+  (prn (check-for-possible-hits @app-state :black))
+  (prn "check for hits, white:")
+  (prn (check-for-possible-hits @app-state :white))
   ;; optionally touch your app-state to force rerendering depending on
   ;; your application
   ;; (swap! app-state update-in [:__figwheel_counter] inc)
