@@ -11,11 +11,7 @@
 (deftest black-figure-test
   (is (= :black (:color c/black)) "Problem with the 'define of a Black Figure"))
 
-(deftest move-direction-tops
-  (is (=
-        [[-1 -1] [1 -1]]
-        (c/move-direction [[{:dir :top}]] 0 0))))
-
-(deftest move-direction-tests)
-
-(prn "aaa")
+(deftest inField?-test
+  (is (= false (c/inField? [-1 -1])) "negative Values are not valid for inField")
+  (is (= true (c/inField? [0 0] [0 0] [(dec c/board-size) (dec c/board-size)])))
+  "two always true values have been broken")

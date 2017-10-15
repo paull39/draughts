@@ -35,8 +35,8 @@
     <orderEntry type="library" name="Leiningen: com.google.code.gson/gson:2.7" level="project" />
     <orderEntry type="library" name="Leiningen: com.google.errorprone/error_prone_annotations:2.0.18" level="project" />
     <orderEntry type="library" name="Leiningen: com.google.guava/guava:20.0" level="project" />
-    <orderEntry type="library" name="Leiningen: com.google.javascript/closure-compiler-externs:v20170806" level="project" />
-    <orderEntry type="library" name="Leiningen: com.google.javascript/closure-compiler-unshaded:v20170806" level="project" />
+    <orderEntry type="library" name="Leiningen: com.google.javascript/closure-compiler-externs:v20170910" level="project" />
+    <orderEntry type="library" name="Leiningen: com.google.javascript/closure-compiler-unshaded:v20170910" level="project" />
     <orderEntry type="library" name="Leiningen: com.google.jsinterop/jsinterop-annotations:1.0.0" level="project" />
     <orderEntry type="library" name="Leiningen: com.google.protobuf/protobuf-java:3.0.2" level="project" />
     <orderEntry type="library" name="Leiningen: com.stuartsierra/component:0.3.2" level="project" />
@@ -57,23 +57,23 @@
     <orderEntry type="library" name="Leiningen: net.cgrand/sjacket:0.1.1" level="project" />
     <orderEntry type="library" name="Leiningen: net.incongru.watchservice/barbary-watchservice:1.0" level="project" />
     <orderEntry type="library" name="Leiningen: net.java.dev.jna/jna:3.2.2" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.9.0-alpha17" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/clojurescript:1.9.908" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.9.0-beta2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/clojurescript:1.9.946" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/core.async:0.3.443" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/core.cache:0.6.5" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/core.memoize:0.5.9" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/core.specs.alpha:0.1.10" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/core.specs.alpha:0.1.24" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/data.json:0.2.6" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/data.priority-map:0.0.7" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/google-closure-library-third-party:0.0-20170809-b9c14c6b" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/google-closure-library:0.0-20170809-b9c14c6b" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/java.classpath:0.2.0" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/spec.alpha:0.1.123" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/spec.alpha:0.1.134" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.analyzer.jvm:0.7.0" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.analyzer:0.6.9" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.namespace:0.2.5" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.12" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/tools.reader:1.0.5" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.reader:1.1.0" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.trace:0.7.8" level="project" />
     <orderEntry type="library" name="Leiningen: org.mozilla/rhino:1.7R5" level="project" />
     <orderEntry type="library" name="Leiningen: org.ow2.asm/asm-all:4.2" level="project" />
